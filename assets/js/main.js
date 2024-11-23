@@ -19,27 +19,29 @@ sections.forEach((section, index) => {
             }
         }
     })
-})
+});
 
+// Tabs;
+const buttns = document.querySelectorAll(".tab_area button");
+buttns.forEach(x => {
+    x.addEventListener("click", (e) => {
+        document.querySelector(".tab_area .on").classList.remove("on");
+        document.querySelector(".tab_area .show").classList.remove("show");
 
-// ScrollTrigger.create({
-//     trigger: main,
-//     onUpdate: target => {
-//         sections.forEach((x) => throttle(scrollActive(target, x), 120));
-//     }
-// });
+        x.classList.add("on");
+        x.nextElementSibling.classList.add("show")
 
-// Scroll Active
-function scrollActive(target, x){
-    if(target.progress > x.offsetTop / (target.end + window.innerHeight / 1.1)){
-        x.classList.add('active');
-    }
-}
+    })
+});
 
 // swiper
 const mySwiper = new Swiper(".swiper", {
     slidesPerView: 1,
     spaceBetween:20,
+    navigation: {
+        prevEl: ".prev",
+        nextEl: ".next"
+    },
     breakpoints: {
         1000: {
             slidesPerView: "auto",

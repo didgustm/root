@@ -10,6 +10,12 @@ gsap.ticker.add(time => {
 });
 gsap.ticker.lagSmoothing(0);
 
+// Gnb open
+function handleOpen(){
+    document.querySelector(".btn_open").classList.toggle("open");
+    document.querySelector(".gnb").classList.toggle("show")
+}
+
 // Throttle
 function throttle(callback, delay){
     let timer;

@@ -1,212 +1,77 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <link rel="stylesheet" href="./assets/css/common.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="title" content="ATGC">
-	<meta name="description" content="">
-	<meta property="og:title" content="ATGC"> 
-	<meta property="og:description" content="">
-	<meta property="og:url" content="">
-	<meta property="og:image" content="">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>ATGC</title>
-</head>
-<body>
-<div id="wrap">
-
-    <!-- Header -->
-    <header class="header mont">
-        <div class="inner">
-            <h1 class="logo">
-                <a href="/atgc"
-                    ><img src="./assets/images/common/logo.png" alt=""
-                /></a>
-            </h1>
-            <button
-                type="button"
-                class="btn_open mo-only"
-                onClick="handleOpen()"
-            >
-                <span class="line line01"></span>
-                <span class="line line02"></span>
-            </button>
-            <nav class="gnb">
-                <ul>
-                    <li><a href="">Company</a></li>
-                    <li><a href="">R&D</a></li>
-                    <li><a href="">Partnership</a></li>
-                    <li><a href="">Investors</a></li>
-                    <li><a href="">Careers</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- //Header -->
-
-    <main>
-        
-        <!-- Intro -->
-        <section class="intro aos">
-            <div class="video">
-                <video
-                    src="./assets/images/index/intro.mp4"
-                    autoplay
-                    muted
-                    loop
-                ></video>
-            </div>
-            <div class="inner mont">
-                <h2 class="title">
-                    <p><span class="__d01">An</span></p>
-                    <p><span class="__d02">innovative</span></p>
-                    <p><span class="__d03">challenger</span></p>
-                    <p><span class="__d04">in</span></p>
-                    <p><span class="__d05">the</span></p>
-                    <p><span class="__d06">field</span></p>
-                    <p><span class="__d07">of</span></p>
-                    <p><span class="__d08">biotherapeutics</span></p>
-                </h2>
-                <a href="" class="more">
-                    Our mission
-                    <svg
-                        width="14"
-                        height="12"
-                        fill="none"
-                        viewBox="0 0 16 14"
+    <head>
+        <link rel="stylesheet" href="./assets/css/common.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <meta charset="UTF-8" />
+        <meta name="title" content="ATGC" />
+        <meta name="description" content="" />
+        <meta property="og:title" content="ATGC" />
+        <meta property="og:description" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <title>ATGC</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- Header -->
+            <header class="header mont">
+                <div class="inner">
+                    <h1 class="logo">
+                        <a href="/atgc"
+                            ><img src="./assets/images/common/logo.png" alt=""
+                        /></a>
+                    </h1>
+                    <button
+                        type="button"
+                        class="btn_open mo-only"
+                        onClick="handleOpen()"
                     >
-                        <path
-                            stroke="#fff"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M1 7h14m0 0-6 6m6-6L9 1"
-                        ></path>
-                    </svg>
-                </a>
-            </div>
-        </section>
-        <!-- //Intro -->
-
-        <!-- Section01 -->
-        <section class="sct01 aos">
-            <div class="img">
-                <img
-                    src="./assets/images/index/img01.jpg"
-                    alt=""
-                />
-            </div>
-            <div class="btn_sticky">
-                <div class="btn_wrap">
-                    <a href="" class="more mont">
-                        <span>Our mission</span>
-                        <svg
-                            width="14"
-                            height="12"
-                            fill="none"
-                            viewBox="0 0 16 14"
-                        >
-                            <path
-                                stroke="var(--color, #111)"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="1.5"
-                                d="M1 7h14m0 0-6 6m6-6L9 1"
-                            ></path>
-                        </svg>
-                    </a>
+                        <span class="line line01"></span>
+                        <span class="line line02"></span>
+                    </button>
+                    <nav class="gnb">
+                        <ul>
+                            <li><a href="">Company</a></li>
+                            <li><a href="">R&D</a></li>
+                            <li><a href="">Partnership</a></li>
+                            <li><a href="">Investors</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-            <div class="inner">
-                <h2 class="title mont">
-                    Leading the Future of Healthcare 
-                    through R&D Innovation and a Global Value Chain
-                </h2>
-                <p class="desc mont">ATGC is a group of professionals
-                    dedicated to the development 
-                    and dissemination of innovative
-                    biopharmaceuticals.
-                </p>
-            </div>
-        </section>
-        <!-- //Section01 -->
+            </header>
+            <!-- //Header -->
 
-        <!-- Section02 -->
-        <section class="sct02 aos">
-            <div class="btn_sticky">
-                <div class="btn_wrap">
-                    <a href="" class="more mont">
-                        <span>Explore ATGC's Pipeline</span>
-                        <svg
-                            width="14"
-                            height="12"
-                            fill="none"
-                            viewBox="0 0 16 14"
-                        >
-                            <path
-                            stroke="var(--color, #111)"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="1.5"
-                                d="M1 7h14m0 0-6 6m6-6L9 1"
-                            ></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="video">
-                <video
-                    src="./assets/images/index/sct02.mp4"
-                    autoplay
-                    muted
-                    loop
-                ></video>
-            </div>
-            <div class="inner">
-                <h2 class="title mont">
-                    <p><span class="__d01">ATGC's</span></p> 
-                    <p><span class="__d02">Lab</span></p>
-                </h2>
-                <p class="text">ATGC currently has two products nearing 
-                    commercialization through its own research and 
-                    development capabilities and is planning to expand
-                    indications and therapeutic areas.
-                </p>                
-            </div>
-        </section>
-        <!-- //Section02 -->
-
-        <!-- Section03 -->
-        <section class="sct03">
-            <div class="inner aos">
-                <div class="top">
-                    <h2 class="title mont">
-                        <p><span class="__d05">Our</span></p> 
-                        <p><span class="__d06">Technology</span></p>
-                    </h2>
-                    <ul class="tab_area">
-                        <li class="show tab01">
-                            <button type="button" class="on mont" data-tab="tab01" onClick="handleTabs()">CHS2™ <br>Technology</button>
-                            <p class="text show">Technology, which enables optimised 
-                                processes from microbial and animal cell culture 
-                                to protein isolation and purification processes</p>
-                        </li>
-                        <li class="tab02">
-                            <button type="button" class="mont" data-tab="tab02" onClick="handleTabs()">Antibody-based <br> platform technology</button>
-                            <p class="text">Tab2Tab2Tab2Tab2 Tab2
-                                Tab2Tab2Tab2Tab2 Tab2Tab2Tab2
-                                Tab2Tab2Tab2Tab2Tab2Ta2</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="btm aos">
-                <div class="btn_sticky">
-                    <div class="btn_wrap mont">
+            <main>
+                <!-- Intro -->
+                <section class="intro aos">
+                    <div class="video">
+                        <video
+                            src="./assets/images/index/intro.mp4"
+                            autoplay
+                            muted
+                            loop
+                        ></video>
+                    </div>
+                    <div class="inner mont">
+                        <h2 class="title">
+                            <p><span class="__d01">An</span></p>
+                            <p><span class="__d02">innovative</span></p>
+                            <p><span class="__d03">challenger</span></p>
+                            <p><span class="__d04">in</span></p>
+                            <p><span class="__d05">the</span></p>
+                            <p><span class="__d06">field</span></p>
+                            <p><span class="__d07">of</span></p>
+                            <p><span class="__d08">biotherapeutics</span></p>
+                        </h2>
                         <a href="" class="more">
-                            <span>Explore our technology</span>
+                            Our mission
                             <svg
                                 width="14"
                                 height="12"
@@ -214,7 +79,7 @@
                                 viewBox="0 0 16 14"
                             >
                                 <path
-                                    stroke="var(--color, #111)"
+                                    stroke="#fff"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                     stroke-width="1.5"
@@ -223,82 +88,141 @@
                             </svg>
                         </a>
                     </div>
-                </div>
-                <div class="swiper mont">
-                    <ul class="swiper-wrapper">
-                        <li class="swiper-slide">
-                            <div class="subject">
-                                Introducing <br>CHS2™ Technology
-                            </div>
-                            <div class="video">
-                                <video src="./assets/images/index/sct03-1.mp4" autoplay muted loop></video>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <div class="subject">
-                                Introducing <br>Antibody-based platform technology
-                            </div>
-                            <div class="video">
-                                <video src="./assets/images/index/sct03-2.mp4" autoplay muted loop></video>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- //Section03 -->
+                </section>
+                <!-- //Intro -->
 
-        <!-- //Section04 -->
-        <section class="sct04">
-            <div class="inner aos">
-                <div class="top">
-                    <h2 class="title mont">
-                        <p><span class="__d05">Our</span></p>
-                        <p><span class="__d06">strategy</span></p>
-                    </h2>
-                    <p class="desc">ATGC utilizes partnerships with trusted local companies to 
-                        efficiently bring innovative therapeutics to the global market.
-                    </p>
-                </div>
-            </div>
-            <div class="btm aos">
-                <div class="btn_sticky">
-                    <div class="btn_wrap mont">
-                        <a href="" class="more">
-                            <span>Explore our strategy</span>
-                            <svg
-                                width="14"
-                                height="12"
-                                fill="none"
-                                viewBox="0 0 16 14"
-                            >
-                                <path
-                                    stroke="var(--color, #111)"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="1.5"
-                                    d="M1 7h14m0 0-6 6m6-6L9 1"
-                                ></path>
-                            </svg>
-                        </a>
+                <!-- Section01 -->
+                <section class="sct01 aos">
+                    <div class="img">
+                        <img src="./assets/images/index/img01.jpg" alt="" />
                     </div>
-                </div>
-                <ul class="imgs">
-                    <li class="list01">
-                        <div class="img">
-                            <img src="./assets/images/index/sct04_img-1.avif" alt="">
+                    <div class="btn_sticky">
+                        <div class="btn_wrap">
+                            <a href="" class="more mont">
+                                <span>Our mission</span>
+                                <svg
+                                    width="14"
+                                    height="12"
+                                    fill="none"
+                                    viewBox="0 0 16 14"
+                                >
+                                    <path
+                                        stroke="var(--color, #111)"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M1 7h14m0 0-6 6m6-6L9 1"
+                                    ></path>
+                                </svg>
+                            </a>
                         </div>
-                    </li>
-                    <li class="list02">
-                        <a href="">
-                            <div class="explain">
-                                <p class="text">To efficiently distribute the medicines
-                                    created through our R&D activities, we 
-                                    have established a system of outsourced 
-                                    production through partnerships. 
-                                </p>
-                                <span class="more mont">
-                                    View CMO
+                    </div>
+                    <div class="inner">
+                        <h2 class="title mont">
+                            Leading the Future of Healthcare through R&D
+                            Innovation and a Global Value Chain
+                        </h2>
+                        <p class="desc mont">
+                            ATGC is a group of professionals dedicated to the
+                            development and dissemination of innovative
+                            biopharmaceuticals.
+                        </p>
+                    </div>
+                </section>
+                <!-- //Section01 -->
+
+                <!-- Section02 -->
+                <section class="sct02 aos">
+                    <div class="btn_sticky">
+                        <div class="btn_wrap">
+                            <a href="" class="more mont">
+                                <span>Explore ATGC's Pipeline</span>
+                                <svg
+                                    width="14"
+                                    height="12"
+                                    fill="none"
+                                    viewBox="0 0 16 14"
+                                >
+                                    <path
+                                        stroke="var(--color, #111)"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M1 7h14m0 0-6 6m6-6L9 1"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <video
+                            src="./assets/images/index/sct02.mp4"
+                            autoplay
+                            muted
+                            loop
+                        ></video>
+                    </div>
+                    <div class="inner">
+                        <h2 class="title mont">
+                            <p><span class="__d01">ATGC's</span></p>
+                            <p><span class="__d02">Lab</span></p>
+                        </h2>
+                        <p class="text">
+                            ATGC currently has two products nearing
+                            commercialization through its own research and
+                            development capabilities and is planning to expand
+                            indications and therapeutic areas.
+                        </p>
+                    </div>
+                </section>
+                <!-- //Section02 -->
+
+                <!-- Section03 -->
+                <section class="sct03">
+                    <div class="inner aos">
+                        <div class="top">
+                            <h2 class="title mont">
+                                <p><span class="__d05">Our</span></p>
+                                <p><span class="__d06">Technology</span></p>
+                            </h2>
+                            <ul class="tab_area">
+                                <li class="tab01">
+                                    <button
+                                        type="button"
+                                        class="on mont"
+                                        data-tab="tab01"
+                                    >
+                                        CHS2™ <br />Technology
+                                    </button>
+                                    <p class="text show">
+                                        Technology, which enables optimised
+                                        processes from microbial and animal cell
+                                        culture to protein isolation and
+                                        purification processes
+                                    </p>
+                                </li>
+                                <li class="tab02">
+                                    <button
+                                        type="button"
+                                        class="mont"
+                                        data-tab="tab02"
+                                    >
+                                        Antibody-based <br />
+                                        platform technology
+                                    </button>
+                                    <p class="text">
+                                        Tab2Tab2Tab2Tab2 Tab2 Tab2Tab2Tab2Tab2
+                                        Tab2Tab2Tab2 Tab2Tab2Tab2Tab2Tab2Ta2
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btm aos">
+                        <div class="btn_sticky">
+                            <div class="btn_wrap mont">
+                                <a href="" class="more">
+                                    <span>Explore our technology</span>
                                     <svg
                                         width="14"
                                         height="12"
@@ -306,30 +230,103 @@
                                         viewBox="0 0 16 14"
                                     >
                                         <path
-                                            stroke="#fff"
+                                            stroke="var(--color, #111)"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
                                             stroke-width="1.5"
                                             d="M1 7h14m0 0-6 6m6-6L9 1"
                                         ></path>
                                     </svg>
-                                </span>
+                                </a>
                             </div>
-                            <div class="img">
-                                <img src="./assets/images/index/sct04_img-2.avif" alt="">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="list03">
-                        <a href="">
-                            <div class="explain">
-                                <p class="text">CSO is our valued partners who are
-                                    dedicated to the distribution and sale of
-                                    medicines produced through contract 
-                                    manufacturing. 
-                                </p>
-                                <span class="more mont">
-                                    View CMO
+                        </div>
+                        <div class="swiper mont">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="subject">
+                                        Introducing <br />CHS2™ Technology
+                                    </div>
+                                    <div class="video">
+                                        <video
+                                            src="./assets/images/index/sct03-1.mp4"
+                                            autoplay
+                                            muted
+                                            loop
+                                        ></video>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="subject">
+                                        Introducing <br />Antibody-based
+                                        platform technology
+                                    </div>
+                                    <div class="video">
+                                        <video
+                                            src="./assets/images/index/sct03-2.mp4"
+                                            autoplay
+                                            muted
+                                            loop
+                                        ></video>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="prev">
+                                <svg
+                                    width="14"
+                                    height="12"
+                                    fill="none"
+                                    viewBox="0 0 16 14"
+                                >
+                                    <path
+                                        stroke="#fff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M1 7h14m0 0-6 6m6-6L9 1"
+                                    ></path>
+                                </svg>
+                            </button>
+                            <button type="button" class="next">
+                                <svg
+                                    width="14"
+                                    height="12"
+                                    fill="none"
+                                    viewBox="0 0 16 14"
+                                >
+                                    <path
+                                        stroke="#fff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M1 7h14m0 0-6 6m6-6L9 1"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- //Section03 -->
+
+                <!-- //Section04 -->
+                <section class="sct04">
+                    <div class="inner aos">
+                        <div class="top">
+                            <h2 class="title mont">
+                                <p><span class="__d05">Our</span></p>
+                                <p><span class="__d06">strategy</span></p>
+                            </h2>
+                            <p class="desc">
+                                ATGC utilizes partnerships with trusted local
+                                companies to efficiently bring innovative
+                                therapeutics to the global market.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btm aos">
+                        <div class="btn_sticky">
+                            <div class="btn_wrap mont">
+                                <a href="" class="more">
+                                    <span>Explore our strategy</span>
                                     <svg
                                         width="14"
                                         height="12"
@@ -337,104 +334,182 @@
                                         viewBox="0 0 16 14"
                                     >
                                         <path
-                                            stroke="#fff"
+                                            stroke="var(--color, #111)"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
                                             stroke-width="1.5"
                                             d="M1 7h14m0 0-6 6m6-6L9 1"
                                         ></path>
                                     </svg>
-                                </span>
+                                </a>
                             </div>
-                            <div class="img">
-                                <img src="./assets/images/index/sct04_img-3.avif" alt="">
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- //Section04 -->
+                        </div>
+                        <ul class="imgs">
+                            <li class="list01">
+                                <div class="img">
+                                    <img
+                                        src="./assets/images/index/img02.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li class="list02">
+                                <a href="">
+                                    <div class="explain">
+                                        <p class="text">
+                                            To efficiently distribute the
+                                            medicines created through our R&D
+                                            activities, we have established a
+                                            system of outsourced production
+                                            through partnerships.
+                                        </p>
+                                        <span class="more mont">
+                                            View CMO
+                                            <svg
+                                                width="14"
+                                                height="12"
+                                                fill="none"
+                                                viewBox="0 0 16 14"
+                                            >
+                                                <path
+                                                    stroke="#fff"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="1.5"
+                                                    d="M1 7h14m0 0-6 6m6-6L9 1"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="img">
+                                        <img
+                                            src="./assets/images/index/img04.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list03">
+                                <a href="">
+                                    <div class="explain">
+                                        <p class="text">
+                                            CSO is our valued partners who are
+                                            dedicated to the distribution and
+                                            sale of medicines produced through
+                                            contract manufacturing.
+                                        </p>
+                                        <span class="more mont">
+                                            View CMO
+                                            <svg
+                                                width="14"
+                                                height="12"
+                                                fill="none"
+                                                viewBox="0 0 16 14"
+                                            >
+                                                <path
+                                                    stroke="#fff"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="1.5"
+                                                    d="M1 7h14m0 0-6 6m6-6L9 1"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="img">
+                                        <img
+                                            src="./assets/images/index/img05.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- //Section04 -->
 
-        <!-- Section05 -->
-        <section class="sct05 aos">
-            <div class="inner">
-                <div class="text_area">
-                    <h2 class="title mont">Work with us</h2>
-                    <p class="text">Making scalable biomaterials a reality <br> for your global supply chains.</p>
-                    <a href="" class="more mont">
-                        Get in touch
-                        <svg
-                            width="14"
-                            height="12"
-                            fill="none"
-                            viewBox="0 0 16 14"
-                        >
-                            <path
-                                stroke="#6f7679"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="1.5"
-                                d="M1 7h14m0 0-6 6m6-6L9 1"
-                            ></path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="video">
-                    <video src="./assets/images/index/sct05.mp4"  autoplay muted loop></video>
-                </div>
-            </div>
-        </section>
-        <!-- //Section05 -->
+                <!-- Section05 -->
+                <section class="sct05 aos">
+                    <div class="inner">
+                        <div class="text_area">
+                            <h2 class="title mont">Work with us</h2>
+                            <p class="text">
+                                Making scalable biomaterials a reality <br />
+                                for your global supply chains.
+                            </p>
+                            <a href="" class="more mont">
+                                Get in touch
+                                <svg
+                                    width="14"
+                                    height="12"
+                                    fill="none"
+                                    viewBox="0 0 16 14"
+                                >
+                                    <path
+                                        stroke="#6f7679"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M1 7h14m0 0-6 6m6-6L9 1"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="video">
+                            <img src="./assets/images/index/img06.jpg" alt="" />
+                        </div>
+                    </div>
+                </section>
+                <!-- //Section05 -->
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="inner">
-                <div class="logo">
-                    <img src="./assets/images/common/logo.png" alt="">
-                </div>
-                <div class="info mont">
-                    <ul class="list">
-                        <li>
-                            <dl>
-                                <dt>About</dt>
-                                <dd><a href="">Company</a></dd>
-                                <dd><a href="">Partnership</a></dd>
-                                <dd><a href="">Investors</a></dd>
-                                <dd><a href="">Careers</a></dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>R&D</dt>
-                                <dd><a href="">Biosimilar</a></dd>
-                                <dd><a href="">Biobetter</a></dd>
-                                <dd><a href="">Platform</a></dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>Contact</dt>
-                                <dd><a href="">Work with us</a></dd>
-                            </dl>
-                        </li>
-                    </ul>
-                    
-                </div>
-                <div class="copy">Copyright © 2024 ATGC Co.,Ltd. All rights reserved.  T +82 2-579-9620</div>
-            </div>
-        </footer>
-        <!-- //Footer -->
-        
-    </main>
-
-
-</div>
-</body>
-<script src="./assets/plugins/gsap/gsap.min.js"></script>
-<script src="./assets/plugins/gsap/ScrollTrigger.min.js"></script>
-<script src="./assets/plugins/lenis/lenis.min.js"></script>
-<script src="./assets/plugins/swiper/swiper.min.js"></script>
-<script src="./assets/js/common.js"></script>
-<script src="./assets/js/main.js"></script>
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="inner">
+                        <div class="logo">
+                            <img src="./assets/images/common/logo.png" alt="" />
+                        </div>
+                        <div class="info mont">
+                            <ul class="list">
+                                <li>
+                                    <dl>
+                                        <dt>About</dt>
+                                        <dd><a href="">Company</a></dd>
+                                        <dd><a href="">Partnership</a></dd>
+                                        <dd><a href="">Investors</a></dd>
+                                        <dd><a href="">Careers</a></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>R&D</dt>
+                                        <dd><a href="">Biosimilar</a></dd>
+                                        <dd><a href="">Biobetter</a></dd>
+                                        <dd><a href="">Platform</a></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>Contact</dt>
+                                        <dd><a href="">Work with us</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="copy">
+                            Copyright © 2024 ATGC Co.,Ltd. All rights reserved.
+                            T +82 2-579-9620
+                        </div>
+                    </div>
+                </footer>
+                <!-- //Footer -->
+            </main>
+        </div>
+    </body>
+    <script src="./assets/plugins/gsap/gsap.min.js"></script>
+    <script src="./assets/plugins/gsap/ScrollTrigger.min.js"></script>
+    <script src="./assets/plugins/lenis/lenis.min.js"></script>
+    <script src="./assets/plugins/swiper/swiper.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/main.js"></script>
 </html>
