@@ -39,15 +39,18 @@ section .inner {
 }
 .title p {
     padding-right: 1rem;
-    overflow:hidden
+    overflow: hidden;
 }
 .title p span {
     display: block;
-    transform:translateY(100%);
+    transform: translateY(100%);
     transition-property: transform;
     transition-duration: 0.6s;
     transition-timing-function: ease-out;
     /* transition:transform 0.6s ease-out */
+}
+.active .title span {
+    transform: translateY(0);
 }
 .desc {
     font-size: 1.6rem;
@@ -66,6 +69,7 @@ section .inner {
     bottom: 0;
     right: 0;
     pointer-events: none;
+    z-index: 99;
 }
 .btn_wrap {
     position: sticky;
@@ -75,12 +79,29 @@ section .inner {
     z-index: 99;
 }
 .btn_wrap .more {
+    position:relative;
+    justify-content: flex-end;
+    width:4.5rem;
     height: 4.5rem;
     padding: 1.2rem 1.6rem;
     background: #c496ff;
     color: #111;
     font-variation-settings: "wght" 500;
+    overflow:hidden;
     transition: background 0.4s;
+    transform: translateY(200%);
+}
+.btn_wrap .more span {
+    position: absolute;
+    right: 45px;
+    white-space:nowrap
+}
+.active .btn_wrap .more {
+    animation:upwide 1s ease 0.4s forwards
+}
+.active .btn_wrap .more span{
+    right:38px;
+    transition:right 0.1s linear 1s
 }
 .btn_wrap .more:hover {
     --color: #fff;
@@ -98,6 +119,17 @@ section .inner {
 }
 .more:hover svg {
     transform: translateX(0.5rem);
+}
+
+@keyframes upwide {
+    50%{
+        width:4.5rem;
+        transform:translateY(0)
+    }
+    100%{
+        width:var(--w);
+        transform:translateY(0);
+    }
 }
 
 /***** header *****/
