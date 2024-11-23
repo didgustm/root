@@ -7,14 +7,14 @@ sections.forEach((section, index) => {
     gsap.to(section, {
         scrollTrigger: {
             trigger: section,
+            start: "top+=10 bottom",
             onEnter: () => {
                 section.classList.add("active");
             },
             onUpdate: ({progress}) => {
                 if(index === 1){
-                    const scale = progress + 0.7 >= 1? 1: progress + 0.7;
-                    gsap.to(".sct01 .img", {scale})
-                    gsap.to(".sct01 .inner", {scale})
+                    const scale = progress + 0.7 >= 1? 1: progress + 0.7 < 0.7? 0.7: progress + 0.7;
+                    gsap.to(".sct01 .img, .sct01 .inner", {scale})
                 }
             }
         }
