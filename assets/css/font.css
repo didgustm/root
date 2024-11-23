@@ -1,0 +1,9 @@
+@font-face{
+    font-family:'NotoSansKR';
+    src:url(../fonts/NotoSansKR-vf.woff2) format(woff2)
+}
+
+@font-face{
+    font-family:'Mont';
+    src:url(../fonts/Montserrat-vf.woff) format(woff)
+}
